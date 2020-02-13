@@ -1,0 +1,5572 @@
+{
+  "e1": {
+    "Weg über Straßen": {
+      "Pool1": {
+        "s1": {
+          "name": "Nach dem Weg fragen",
+          "sprint": 0,
+          "descr": "vermittelt grundlegende Fähigkeiten, um im menschlichen Siedlungsraum zu agieren, ohne die Bewohner zu verängstigen",
+          "require": [],
+          "contain": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            }
+          ],
+          "reward": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            },
+            {
+              "id": 2,
+              "name": "Kommunikation mit Menschen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Interaktion mit Mensch",
+                "contain": 1,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Kommunikation mit Mensch",
+                "contain": 2,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 2,
+                  "rz": 1
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 4
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "2",
+                "require": []
+              },
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 3,
+                  "m": 1,
+                  "rz": 1
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Stadtplan lesen",
+          "sprint": 0,
+          "descr": "vermittelt grundlegende Fähigkeiten der Modellierung und des abstrakten Denkens",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 3,
+              "name": "Lesen"
+            },
+            {
+              "id": 4,
+              "name": "Topographie"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Logiktraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 6
+                },
+                "dino_a": {},
+                "time": "3",
+                "require": []
+              },
+              {
+                "name": "Leichte Anpassung",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "rz": 1
+                },
+                "dino_a": {},
+                "time": "1",
+                "require": []
+              },
+              {
+                "name": "Lesen",
+                "contain": 3,
+                "dino_r": {
+                  "l": 0
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              },
+              {
+                "name": "Topographie",
+                "contain": 4,
+                "dino_r": {
+                  "l": 0
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Improvisation",
+          "sprint": 0,
+          "descr": "allgemeine Stärkung des Dinos in geistiger und körperlicher Hinsicht",
+          "contain": [],
+          "require": [],
+          "reward": [],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Geistiges Training",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1,
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Powertraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 1,
+                  "gw": 1,
+                  "gr": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Verkehrstraining für Fußgänger",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage, ohne Schaden an sich und anderen die Herausforderungen des Strassenverkehrs als laufender Verkehrsteilnehmer zu meistern",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 5,
+              "name": "Verkehrstraining für Fussgänger"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 3,
+                  "l": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {
+                  "gw": -1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 6,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Verkehrstraining für Fußgänger",
+                "contain": 5,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "rz": 0
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s2": {
+          "name": "Strassendominanz für Fußgänger",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage, ohne Schaden an sich selbst die Herausforderungen des Strassenverkehrs als laufender Verkehrsteilnehmer zu meistern und beliebige Hindernisse zu eliminieren",
+          "contain": [],
+          "require": [],
+          "reward": [],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mind Downgrade",
+                "contain": null,
+                "dino_r": {
+                  "l": -2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 0,
+                    "op": "eq"
+                  }
+                },
+                "time": "1",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Sporttraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {
+                  "gw": 2,
+                  "gr": 2
+                },
+                "dino_a": {
+                  "gw": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Strassendominanz für Autofahrer",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage, ohne Schaden an sich selbst die Herausforderungen des Strassenverkehrs als fahrender Verkehrsteilnehmer zu meistern und beliebige Hindernisse zu eliminieren oder zu umfahren, Grundkenntnisse der Bedienung von Kfz ",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 6,
+              "name": "Grundsätzliche Bedienung von Kraftfahrzeugen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Geist Anpassung",
+                "contain": null,
+                "dino_r": {
+                  "sf": -2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 0,
+                    "op": "eq"
+                  },
+                  "l": {
+                    "val": 3,
+                    "op": "eq"
+                  }
+                },
+                "time": "1",
+                "require": []
+              },
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 3
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Skillset Auto",
+                "contain": null,
+                "dino_r": {
+                  "rz": 3,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "2",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung für Auto",
+                "contain": null,
+                "dino_r": {
+                  "gw": -1
+                },
+                "dino_a": {
+                  "b": {
+                    "vall": 3,
+                    "valh": 7,
+                    "op": "bt"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 4,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Grundsätzliche Bedienung von Kraftfahrzeugen",
+                "contain": 6,
+                "dino_r": {
+                  "l": 0,
+                  "rz": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s4": {
+          "name": "Springen auf bewegliche Objekte",
+          "sprint": 0,
+          "descr": "spezielles Training, das es dem Dino ermöglicht, auf ausreichend große Kfz (LKWs) aufzuspringen und das Fahrzeug bei Bedarf zu wechseln",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 7,
+              "name": "Truck-Surfing"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 3
+                },
+                "dino_a": {
+                  "l": {
+                    "vall": 3,
+                    "valh": 6,
+                    "op": "bt"
+                  },
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperliche Anpassungen",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "vall": 4,
+                    "valh": 6,
+                    "op": "bt"
+                  },
+                  "gr": {
+                    "vall": 2,
+                    "valh": 6,
+                    "op": "bt"
+                  }
+                },
+                "time": "0.5",
+                "require": [
+                  0
+                ]
+              },
+              {
+                "name": "Truck Surfing",
+                "contain": 7,
+                "dino_r": {
+                  "rz": 0,
+                  "m": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s5": {
+          "name": "Führerschein aller Klassen",
+          "sprint": 0,
+          "descr": "umfassende Ausbildung zum Kraftfahrer; anwendungsbereite Kenntnis der StVO; Theorie und Praxis; Fahrsicherheitstraining",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 8,
+              "name": "Universalführerschein"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 3
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "2",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "rz": 2
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 3,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung für Auto",
+                "dino_r": {
+                  "gw": -1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 4,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Führerschein aller Klassen",
+                "contain": 8,
+                "dino_r": {
+                  "l": 0,
+                  "rz": 0,
+                  "sf": 0
+                },
+                "dino_a": {},
+                "time": "3.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s6": {
+          "name": "GK Interaktion mit Menschen",
+          "sprint": 0,
+          "descr": "vermittelt grundlegende Fähigkeiten, um im menschlichen Siedlungsraum zu agieren, ohne die Bewohner zu verängstigen",
+          "contain": [
+            {
+              "id": 1,
+              "name": "GK Interaktion mit Menschen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Interaktion mit Menschen",
+                "contain": 1,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Geist Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 2,
+                  "m": 1
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {
+                  "st": -1,
+                  "gw": -1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s7": {
+          "name": "sozial angepasstes Laufen im urbanen Verkehrsraum",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage, ohne Schaden an sich und anderen die Herausforderungen des Strassenverkehrs als laufender Verkehrsteilnehmer zu meistern und vermittelt grundlegende Fähigkeiten, um im menschlichen Siedlungsraum zu agieren, ohne die Bewohner zu verängstigen",
+          "contain": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            },
+            {
+              "id": 5,
+              "name": "Verkehrstraining für Fussgänger"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            },
+            {
+              "id": 5,
+              "name": "Verkehrstraining für Fußgänger"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {
+                  "st": -1,
+                  "gw": -1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Verkehrstraining für Fußgänger",
+                "contain": 5,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "rz": 0
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Interaktion mit Menschen",
+                "contain": 1,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Mindset",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "name": "Skillset",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": [
+                  5
+                ]
+              },
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 2,
+                  "m": 1
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": [
+                  5
+                ]
+              },
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 3,
+                  "l": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 5
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Logiktraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 4
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "3.0",
+                "require": []
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Weg über Dächer": {
+      "Pool1": {
+        "s1": {
+          "name": "GK Fassaden Raufklettern",
+          "sprint": 0,
+          "descr": "vermittelt Grundlagen des Klettern, ausreichend um mittelhohe Gebäude zu erklimmen",
+          "contain": [
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Raufklettern",
+                "contain": 9,
+                "dino_r": {
+                  "bg": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  9
+                ]
+              },
+              {
+                "contain": null,
+                "name": "Stärkung",
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Gymnastik",
+                "contain": null,
+                "dino_r": {
+                  "b": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Balancetraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 2
+                },
+                "dino_a": {
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Fahrstuhlkompatibilität (für sehr kleine Dinos)",
+          "sprint": 0,
+          "descr": "praktisch anwendbare Kenntnisse der Fahrstuhlbenutzung; Orientierung in\nHäusern",
+          "contain": [
+            {
+              "id": 1,
+              "name": "GK Interaktion mit Menschen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            },
+            {
+              "id": 10,
+              "name": "Fahrstuhlbenutzung"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {
+                  "st": -1,
+                  "gw": -1
+                },
+                "dino_a": {
+                  "gr": {
+                    "val": 2,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 2,
+                    "op": "le"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Interaktion mit Menschen",
+                "contain": 1,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Fahrstuhlführer",
+                "contain": 10,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 2,
+                  "m": 1
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s3": {
+          "name": "Grundausbildung Flugsaurier",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage kleinere Strecken (bis ca. 50m) ohne große Höhenunterschiede zu fliegen",
+          "contain": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Grundausbildung Flugsaurier",
+                "contain": 11,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Werte Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "extr": {
+                    "val": 1,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodyshaping",
+                "contain": null,
+                "dino_r": {
+                  "extr": 1
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ]
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Durchqueren von Straßenschluchten",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage von einem mittelhohen Gebäude herunterzuklettern",
+          "contain": [
+            {
+              "id": 5,
+              "name": "Verkehrstraining für Fussgänger"
+            },
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 5,
+              "name": "Verkehrstraining für Fußgänger"
+            },
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            },
+            {
+              "id": 12,
+              "name": "Herabklettern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Verkehrstraining für Fußgänger",
+                "contain": 5,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0,
+                  "rz": 0
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Raufklettern",
+                "contain": 9,
+                "dino_r": {
+                  "bg": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Runterklettern",
+                "contain": 12,
+                "dino_r": {
+                  "bg": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Geist Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  5,
+                  9
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  5,
+                  9
+                ]
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": [
+                  5
+                ]
+              },
+              {
+                "name": "Gymnastik",
+                "contain": null,
+                "dino_r": {
+                  "b": 2,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": [
+                  5
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 3
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": [
+                  9
+                ]
+              },
+              {
+                "name": "Geisttraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 2,
+                  "m": 2
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 3,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": [
+                  9
+                ]
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 2,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": [
+                  9
+                ]
+              },
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 3,
+                  "l": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 3,
+                  "bg": 3
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "3.0",
+                "require": []
+              },
+              {
+                "name": "Motivationstraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 3,
+                  "rz": 2,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 3,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "3.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Weitsprung",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage von Haus zu Haus springen zu können",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 13,
+              "name": "Weitsprung"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Weitsprung",
+                "contain": 13,
+                "dino_r": {
+                  "st": 0,
+                  "bg": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Weitsprung und Hangeln",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage, Straßenschluchten mithilfe von Stromleitungen oder anderen gespannten Seilen zu überqueren",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 13,
+              "name": "Weitsprung"
+            },
+            {
+              "id": 14,
+              "name": "Hangeln"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 3
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "1.0",
+                "require": [
+                  0
+                ]
+              },
+              {
+                "name": "Weitsprung",
+                "contain": 13,
+                "dino_r": {
+                  "st": 0,
+                  "bg": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Hangeln",
+                "contain": 14,
+                "dino_r": {
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s4": {
+          "name": "Grundausbildung Flugsaurier",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage kleinere Strecken (bis ca. 50m) ohne große Höhenunterschiede zu fliegen",
+          "contain": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Grundausbildung Flugsaurier",
+                "contain": 11,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Werte Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "extr": {
+                    "val": 1,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodyshaping",
+                "contain": null,
+                "dino_r": {
+                  "extr": 1
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s5": {
+          "name": "Aufbaukurs Flugsaurier: Streckenflug",
+          "sprint": 0,
+          "descr": "versetzt den Dino in die Lage bis zum Hochhaus zu fliegen",
+          "contain": [],
+          "require": [
+            11
+          ],
+          "reward": [
+            {
+              "id": 15,
+              "name": "Streckenflug"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.0",
+                "require": []
+              },
+              {
+                "name": "Streckenflug",
+                "contain": 15,
+                "dino_r": {
+                  "st": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      }
+    }
+  },
+  "e2": {
+    "Fassadenklettern": {
+      "Pool1": {
+        "s1": {
+          "name": "GK Fassaden Raufklettern",
+          "sprint": 1,
+          "descr": "vermittelt Grundlagen des Klettern, ausreichend um mittelhohe Gebäude zu erklimmen",
+          "contain": [
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 9,
+              "name": "GK Fassaden Raufklettern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Raufklettern",
+                "contain": 9,
+                "dino_r": {
+                  "bg": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  9
+                ]
+              },
+              {
+                "contain": null,
+                "name": "Stärkung",
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Gymnastik",
+                "contain": null,
+                "dino_r": {
+                  "b": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Balancetraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 2
+                },
+                "dino_a": {
+                  "bg": {
+                    "val": 4,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Hochhausklettern",
+          "sprint": 1,
+          "descr": "praxisorientierte Vermittlung von Techniken des Hochhauskletterns; Entwicklung von Saugnäpfen; Psychologisches Training",
+          "require": [
+            9
+          ],
+          "contain": [
+            {
+              "id": 16,
+              "name": "Hochhausklettern"
+            }
+          ],
+          "reward": [
+            {
+              "id": 16,
+              "name": "Hochhausklettern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Hochhausklettern",
+                "contain": 16,
+                "dino_r": {
+                  "st": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  16
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "extr": {
+                    "val": 2,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  16
+                ]
+              },
+              {
+                "name": "Psychologisches Training",
+                "contain": null,
+                "dino_r": {
+                  "l": 1,
+                  "m": 2
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 2,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperliche Weiterentwicklung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 2
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ]
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Hochhausklettern",
+          "sprint": 1,
+          "descr": "praxisorientierte Vermittlung von Techniken des Hochhauskletterns; Entwicklung von Saugnäpfen; Psychologisches Training",
+          "require": [
+            9
+          ],
+          "contain": [
+            {
+              "id": 16,
+              "name": "Hochhausklettern"
+            }
+          ],
+          "reward": [
+            {
+              "id": 16,
+              "name": "Hochhausklettern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Hochhausklettern",
+                "contain": 16,
+                "dino_r": {
+                  "st": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  16
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "extr": {
+                    "val": 2,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  16
+                ]
+              },
+              {
+                "name": "Psychologisches Training",
+                "contain": null,
+                "dino_r": {
+                  "l": 1,
+                  "m": 2
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 2,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperliche Weiterentwicklung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 2
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Tarnungsworkshop",
+          "sprint": 1,
+          "descr": "Effiziente Dinotarnung am Hochhaus hilft Beunruhigung in der Bevölkerung zu vermeiden",
+          "require": [],
+          "contain": [],
+          "reward": [
+            {
+              "id": 17,
+              "name": "Tarnung"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Tarnung",
+                "contain": 17,
+                "dino_r": {
+                  "sf": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Hilfe von Fensterputzern",
+          "sprint": 1,
+          "descr": "Fensterputzer haben stabile Gerüste an der Fassade. Das könnte helfen den Kraftverlust des Aufstiegs zu vermeiden; praxisorientierte Schulung für sympathisches Auftreten",
+          "require": [],
+          "contain": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            }
+          ],
+          "reward": [
+            {
+              "id": 18,
+              "name": "Hilfe von Fensterputzern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Hilfe von Fensterputzern",
+                "contain": "18",
+                "dino_r": {
+                  "sf": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Checkup",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 10,
+                    "op": "eq"
+                  }
+                },
+                "time": "1.0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 10,
+                    "op": "eq"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Auf das Hochhaus fliegen": {
+      "Pool1": {
+        "s1": {
+          "name": "Grundausbildung Flugsaurier",
+          "sprint": 1,
+          "descr": "versetzt den Dino in die Lage kleinere Strecken (bis ca. 50m) ohne große Höhenunterschiede zu fliegen",
+          "contain": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Grundausbildung Flugsaurier",
+                "contain": 11,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Werte Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "extr": {
+                    "val": 1,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodyshaping",
+                "contain": null,
+                "dino_r": {
+                  "extr": 1
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Aufbaukurs Flugsaurier: Höhenflug",
+          "sprint": 1,
+          "descr": "versetzt den Dino in die Lage auf ein Hochhaus hinaufzufliegen; Theorie des Höhenflugs; Höhenflugtraing; Psychologisches Training; Größenanpassung (Gewicht ≤ 5, Größe ≤ 6)",
+          "require": [
+            11
+          ],
+          "contain": [
+            {
+              "id": 19,
+              "name": "Höhenflug"
+            }
+          ],
+          "reward": [
+            {
+              "id": 19,
+              "name": "Höhenflug"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Höhenflug",
+                "contain": "19",
+                "dino_r": {
+                  "st": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  19
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  19
+                ]
+              },
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 1,
+                  "m": 2
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.0",
+                "require": []
+              }
+            ]
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Aufbaukurs Flugsaurier: Höhenflug",
+          "sprint": 1,
+          "descr": "versetzt den Dino in die Lage auf ein Hochhaus hinaufzufliegen; Theorie des Höhenflugs; Höhenflugtraing; Psychologisches Training; Größenanpassung (Gewicht ≤ 5, Größe ≤ 6)",
+          "require": [
+            11
+          ],
+          "contain": [
+            {
+              "id": 19,
+              "name": "Höhenflug"
+            }
+          ],
+          "reward": [
+            {
+              "id": 19,
+              "name": "Höhenflug"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Höhenflug",
+                "contain": "19",
+                "dino_r": {
+                  "st": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Skill Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  19
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  19
+                ]
+              },
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 1,
+                  "m": 2
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  }
+                },
+                "time": "0.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Tarnungsworkshop",
+          "sprint": 1,
+          "descr": "Effiziente Dinotarnung am Hochhaus hilft Beunruhigung in der Bevölkerung zu vermeiden",
+          "require": [],
+          "contain": [],
+          "reward": [
+            {
+              "id": 17,
+              "name": "Tarnung"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mindtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Tarnung",
+                "contain": 17,
+                "dino_r": {
+                  "sf": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Hilfe von Fensterputzern",
+          "sprint": 1,
+          "descr": "Fensterputzer haben stabile Gerüste an der Fassade. Das könnte helfen den Kraftverlust des Aufstiegs zu vermeiden; praxisorientierte Schulung für sympathisches Auftreten",
+          "require": [],
+          "contain": [
+            {
+              "id": 1,
+              "name": "Interaktion mit Menschen"
+            }
+          ],
+          "reward": [
+            {
+              "id": 18,
+              "name": "Hilfe von Fensterputzern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Hilfe von Fensterputzern",
+                "contain": "18",
+                "dino_r": {
+                  "sf": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Checkup",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 10,
+                    "op": "eq"
+                  }
+                },
+                "time": "1.0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 2
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 10,
+                    "op": "eq"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s4": {
+          "name": "Krafttraining für Höhenflugsaurier",
+          "sprint": 0,
+          "descr": "ermöglicht den Höhenflug mit mehr Gewicht(≤7) und Größe (≤8)",
+          "require": [
+            19
+          ],
+          "contain": [],
+          "reward": [
+            {
+              "id": 20,
+              "name": "Krafttraining für Höhenflugsaurier"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperliche Anpassungen",
+                "contain": null,
+                "dino_r": {
+                  "gw": 2,
+                  "gr": 2
+                },
+                "dino_a": {
+                  "gw": {
+                    "val": 7,
+                    "op": "le"
+                  },
+                  "gr": {
+                    "val": 8,
+                    "op": "le"
+                  }
+                },
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Krafttraining für Höhenflugsaurier",
+                "contain": "20",
+                "dino_r": {
+                  "gw": 0,
+                  "gr": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      }
+    }
+  },
+  "e3": {
+    "Kampfflugsaurier": {
+      "Pool1": {
+        "s1": {
+          "name": "Grundausbildung Flugsaurier",
+          "sprint": 2,
+          "descr": "versetzt den Dino in die Lage kleinere Strecken (bis ca. 50m) ohne große Höhenunterschiede zu fliegen",
+          "contain": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 11,
+              "name": "GK Fliegen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Größenanpassung",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "gr": {
+                    "val": 6,
+                    "op": "le"
+                  },
+                  "gw": {
+                    "val": 5,
+                    "op": "le"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Grundausbildung Flugsaurier",
+                "contain": 11,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Werte Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "extr": {
+                    "val": 1,
+                    "op": "eq"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  11
+                ]
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "st": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 4,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodyshaping",
+                "contain": null,
+                "dino_r": {
+                  "extr": 1
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Kampfausbildung für Flugsaurier „Shao Lang“",
+          "sprint": 2,
+          "descr": "hochspezialisierte tibetische Ausbilder vermitteln effizienteste Kampfkunst in Theorie und Praxis; trainiert werden schnelle Flugmanöver",
+          "require": [
+            11
+          ],
+          "contain": [
+            {
+              "id": 21,
+              "name": "Flugtechniken Shao Lang"
+            },
+            {
+              "id": 22,
+              "name": "Kampftechniken Shao Lang"
+            }
+          ],
+          "reward": [
+            {
+              "id": 21,
+              "name": "Flugtechniken Shao Lang"
+            },
+            {
+              "id": 22,
+              "name": "Kampftechniken Shao Lang"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Flugtechniken Shao Langh",
+                "contain": 21,
+                "dino_r": {
+                  "bg": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Kampftechniken Shao Lang",
+                "contain": 22,
+                "dino_r": {
+                  "rz": 0,
+                  "m": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Mental Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "b": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "vall": 4,
+                    "valh": 7,
+                    "op": "bt"
+                  },
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "vall": 4,
+                    "valh": 7,
+                    "op": "bt"
+                  },
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s3": {
+          "name": "Kampftraining für Flugsaurier „Mitteldeutschland“",
+          "sprint": 2,
+          "descr": "deutsche Ausbilder mit teilweise professionellem Background trainieren nach bestem Wissen und Gewissen; Training ermöglicht das Fliegen mit mehr Gewicht\n(≤7) und Größe (≤8)",
+          "contain": [],
+          "require": [
+            11
+          ],
+          "reward": [
+            {
+              "id": 23,
+              "name": "Flugtechniken „Mitteldeutschland“"
+            },
+            {
+              "id": 24,
+              "name": "Kampftechniken „Mitteldeutschland“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Flugtechniken „Mitteldeutschland“",
+                "contain": 23,
+                "dino_r": {
+                  "b": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Kampftechniken „Mitteldeutschland“",
+                "contain": 24,
+                "dino_r": {
+                  "st": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Komplett Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {},
+                "time": 0,
+                "require": [
+                  24,
+                  23
+                ]
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 2,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 2,
+                  "gw": 1,
+                  "gr": 2
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              }
+            ]
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Kampfausbildung für Flugsaurier „Shao Lang“",
+          "sprint": 2,
+          "descr": "hochspezialisierte tibetische Ausbilder vermitteln effizienteste Kampfkunst in Theorie und Praxis; trainiert werden schnelle Flugmanöver",
+          "require": [
+            11
+          ],
+          "contain": [
+            {
+              "id": 21,
+              "name": "Flugtechniken Shao Lang"
+            },
+            {
+              "id": 22,
+              "name": "Kampftechniken Shao Lang"
+            }
+          ],
+          "reward": [
+            {
+              "id": 21,
+              "name": "Flugtechniken Shao Lang"
+            },
+            {
+              "id": 22,
+              "name": "Kampftechniken Shao Lang"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Flugtechniken Shao Langh",
+                "contain": 21,
+                "dino_r": {
+                  "bg": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Kampftechniken Shao Lang",
+                "contain": 22,
+                "dino_r": {
+                  "rz": 0,
+                  "m": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "2",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Mental Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "name": "Körper Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "b": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "vall": 4,
+                    "valh": 7,
+                    "op": "bt"
+                  },
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "0",
+                "require": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 9,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 9,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "gw": {
+                    "vall": 4,
+                    "valh": 7,
+                    "op": "bt"
+                  },
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Kampftraining für Flugsaurier „Mitteldeutschland“",
+          "sprint": 2,
+          "descr": "deutsche Ausbilder mit teilweise professionellem Background trainieren nach bestem Wissen und Gewissen; Training ermöglicht das Fliegen mit mehr Gewicht\n(≤7) und Größe (≤8)",
+          "contain": [],
+          "require": [
+            11
+          ],
+          "reward": [
+            {
+              "id": 23,
+              "name": "Flugtechniken „Mitteldeutschland“"
+            },
+            {
+              "id": 24,
+              "name": "Kampftechniken „Mitteldeutschland“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Flugtechniken „Mitteldeutschland“",
+                "contain": 23,
+                "dino_r": {
+                  "b": 0,
+                  "st": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Kampftechniken „Mitteldeutschland“",
+                "contain": 24,
+                "dino_r": {
+                  "st": 0,
+                  "m": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Komplett Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {},
+                "time": 0,
+                "require": [
+                  24,
+                  23
+                ]
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 2,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 2,
+                  "gw": 1,
+                  "gr": 2
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s3": {
+          "name": "Körperliche Weiterentwicklung: Peitschenschwanz für Flugsaurier",
+          "sprint": 2,
+          "descr": "eine speziell für Kampfflugsaurier hocheffiziente Waffe; Spezialtraining: Einführung in die Benutzung des Peitschenschwanzes",
+          "contain": [],
+          "require": [
+            11
+          ],
+          "reward": [
+            {
+              "id": 25,
+              "name": "Kampftechniken Peitschenschwanz"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1,
+                  "gw": 1
+                },
+                "dino_a": {
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körpererweiterung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 4
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Kampftechniken Peitschenschwanz",
+                "contain": 25,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s4": {
+          "name": "Körperliche Weiterentwicklung: Krallen für Flugsaurier",
+          "sprint": 2,
+          "descr": "Eine solide Waffe für Flugsaurier; Spezialtraining: Einführung in die Benutzung der Krallen",
+          "contain": [],
+          "require": [
+            11
+          ],
+          "reward": [
+            {
+              "id": 26,
+              "name": "Flugkampftechniken Krallen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {
+                  "gr": {
+                    "vall": 6,
+                    "valh": 8,
+                    "op": "bt"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Körpererweiterung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 3
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Flugkampftechniken Krallen",
+                "contain": 26,
+                "dino_r": {
+                  "st": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      }
+    },
+    "Bodenkampfsaurier": {
+      "Pool1": {
+        "s1": {
+          "name": "Fitness- & Schnelligkeitstraining „Nying Do“",
+          "sprint": 2,
+          "descr": "Grausame aber über Jahrtausende bewährte Methoden aus der Kernzone des Himalaya kommen zum Einsatz",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 27,
+              "name": "Fitness- & Schnelligkeitstraining „Nying Do“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mental Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 5,
+                    "op": "ge"
+                  },
+                  "m": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1,
+                  "gw": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Grundtraining „Nying Do“",
+                "contain": 27,
+                "dino_r": {
+                  "bg": 0,
+                  "rz": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s2": {
+          "name": "Komplettausbildung für Bodenkampfsaurier „Nying Do“",
+          "sprint": 2,
+          "descr": "Grausame aber über Jahrtausende bewährte Methoden aus der Kernzone des Himalaya kommen zum Einsatz; hochspezialisierte tibetische Ausbilder vermitteln effizienteste Kampfkunst in Theorie und Praxis",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 27,
+              "name": "Grundtraining „Nying Do“"
+            },
+            {
+              "id": 28,
+              "name": "Kampftechnik „Nying Do“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "rz": 2
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "rz": {
+                    "val": 8,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 2,
+                  "bg": 2
+                },
+                "dino_a": {
+                  "b": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 8,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": [
+                  1
+                ]
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1,
+                  "gw": 1
+                },
+                "dino_a": {
+                  "st": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Grundtraining „Nying Do“",
+                "contain": 27,
+                "dino_r": {
+                  "bg": 0,
+                  "rz": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Kampftechnik „Nying Do“",
+                "contain": 28,
+                "dino_r": {
+                  "bg": 0,
+                  "rz": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "3.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Ertüchtigungstraining „Sachsen“",
+          "sprint": 2,
+          "descr": "Besonderer Wert wird auf Stärke, Gewicht und Größe gelegt",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 29,
+              "name": "Ertüchtigungstraining „Sachsen“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mentale Abhärtung",
+                "contain": null,
+                "dino_r": {
+                  "sf": -1,
+                  "l": -1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Krafttraining",
+                "contain": null,
+                "dino_r": {
+                  "st": 2
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "gw": 2,
+                  "gr": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Ertüchtigungstraining „Sachsen“",
+                "contain": 29,
+                "dino_r": {
+                  "st": 0,
+                  "gw": 0,
+                  "gr": 0
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s4": {
+          "name": "Komplettkampfausbildung „Sachsen“",
+          "sprint": 2,
+          "descr": "Deutsche Ausbilder mit teilweise professionellem Background trainieren nach bestem Wissen und Gewissen; Besonderer Wert wird auf Stärke, Gewicht und Größe gelegt",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 29,
+              "name": "Ertüchtigungstraining „Sachsen“"
+            },
+            {
+              "id": 30,
+              "name": "Allgemeines Kampftraining"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mentale Abhärtung",
+                "contain": null,
+                "dino_r": {
+                  "sf": -3,
+                  "l": -2
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "st": 2
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "gw": 2,
+                  "gr": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Ertüchtigungstraining „Sachsen“",
+                "contain": 29,
+                "dino_r": {
+                  "st": 0,
+                  "gw": 0,
+                  "gr": 0
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Allgemeines Kampftraining",
+                "contain": 30,
+                "dino_r": {
+                  "st": 0,
+                  "gw": 0,
+                  "gr": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Kampftraining „Nying Do“",
+          "sprint": 2,
+          "descr": "hochspezialisierte tibetische Ausbilder vermitteln effizienteste Kampfkunst in Theorie und Praxis",
+          "contain": [],
+          "require": [
+            27
+          ],
+          "reward": [
+            {
+              "id": 28,
+              "name": "Kampftechnik „Nying Do“"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mentaltraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Stärkung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "st": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 1,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {
+                  "rz": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "b": {
+                    "val": 8,
+                    "op": "ge"
+                  },
+                  "bg": {
+                    "val": 8,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Kampftechnik „Nying Do“",
+                "contain": 28,
+                "dino_r": {
+                  "bg": 0,
+                  "rz": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "3.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s2": {
+          "name": "Kampftraining „Sachsen“",
+          "sprint": 2,
+          "descr": "deutsche Ausbilder mit teilweise professionellem Background trainieren nach bestem Wissen und Gewissen",
+          "contain": [],
+          "require": [
+            29
+          ],
+          "reward": [
+            {
+              "id": 30,
+              "name": "Allgemeines Kampftraining"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Mentale Abhärtung",
+                "contain": null,
+                "dino_r": {
+                  "sf": -2,
+                  "l": -1
+                },
+                "dino_a": {
+                  "m": {
+                    "val": 6,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Skilltraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 2,
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Allgemeines Kampftraining",
+                "contain": 30,
+                "dino_r": {
+                  "st": 0,
+                  "gw": 0,
+                  "gr": 0
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Körperliche Weiterentwicklung: Krallen",
+          "sprint": 2,
+          "descr": "Eine solide Waffe;Spezialtraining: Einführung in die Benutzung der Krallen; übrigens: Krallen und Saugnäpfe schliessen einander nicht aus ",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 31,
+              "name": "Bodenkampftechniken Krallen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körpererweiterung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 3
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodenkampftechniken Krallen",
+                "contain": 31,
+                "dino_r": {
+                  "st": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s4": {
+          "name": "Körperliche Weiterentwicklung: Peitschenschwanz",
+          "sprint": 2,
+          "descr": "eine effiziente Waffe; Spezialtraining: Einführung in die Benutzung des Peitschenschwanzes",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 32,
+              "name": "Bodenkampftechniken Peitschenschwanz"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Techniktraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körperertüchtigung",
+                "contain": null,
+                "dino_r": {
+                  "st": 1,
+                  "gw": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Körpererweiterung",
+                "contain": null,
+                "dino_r": {
+                  "extr": 4
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Bodenkampftechniken Peitschenschwanz",
+                "contain": 32,
+                "dino_r": {
+                  "b": 0,
+                  "bg": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      }
+    },
+    "Friedenssaurier": {
+      "Pool1": {
+        "s1": {
+          "name": "Gorillasprache",
+          "sprint": 2,
+          "descr": "praxisorientierte Einführung in die Gorillasprache",
+          "contain": [
+            {
+              "id": 33,
+              "name": "Gorillasprache"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 33,
+              "name": "Gorillasprache"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Gorillasprache",
+                "contain": 33,
+                "dino_r": {
+                  "l": 0,
+                  "sf": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Geist Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  33
+                ]
+              },
+              {
+                "name": "Geisttraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s2": {
+          "name": "Groß und böse aussehen",
+          "sprint": 2,
+          "descr": "Spezielle Diäten ergeben einen sehr großen und schweren Dino sowie einen Eindruck von Stärke; Namhafte Theaterpädagogen erweitern das Ausdruckspotential auf furchterregende Nuancen",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 34,
+              "name": "Groß und böse aussehen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Ermutigung",
+                "contain": null,
+                "dino_r": {
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "0.5",
+                "require": []
+              },
+              {
+                "name": "Gewichtszunahme",
+                "contain": null,
+                "dino_r": {
+                  "gw": 4
+                },
+                "dino_a": {
+                  "gw": {
+                    "val": 8,
+                    "op": "ge"
+                  }
+                },
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Wachstumsprogramm",
+                "contain": null,
+                "dino_r": {
+                  "gr": 2
+                },
+                "dino_a": {
+                  "gr": {
+                    "val": 10,
+                    "op": "eq"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Groß und böse aussehen",
+                "contain": 34,
+                "dino_r": {
+                  "gw": 0,
+                  "gr": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Tschacka – Seminar zur Steigerung des Selbstbewusstseins",
+          "sprint": 2,
+          "descr": "Ein außerordentlich erfolgreicher Motivationstrainer erweitert die Grenzen des eigenen Ich und ermöglicht so souveränes und ergebnisorientiertes Auftreten",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 35,
+              "name": "Gesteigertes Selbstbewusstsein"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Geisttraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 5,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "bg": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Gesteigertes Selbstbewusstsein",
+                "contain": 35,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      },
+      "Pool2": {
+        "s1": {
+          "name": "Rhetorikseminar – Gorillamanagement für die Praxis",
+          "sprint": 2,
+          "descr": "Gorillas gewinnen: Gorillawitze, Mimik/Gestik um Gorillas zu beeindrucken; Gorillas überzeugen: Gorillalogik und ihre Anwendung",
+          "contain": [],
+          "require": [
+            33
+          ],
+          "reward": [
+            {
+              "id": 36,
+              "name": "Gorillas überzeugen"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Sozialtraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 3
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Logiktraining",
+                "contain": null,
+                "dino_r": {
+                  "l": 2
+                },
+                "dino_a": {
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Rollenspiele",
+                "contain": null,
+                "dino_r": {
+                  "m": 1,
+                  "rz": 1,
+                  "b": 1
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              },
+              {
+                "name": "Gorillas überzeugen",
+                "contain": 36,
+                "dino_r": {
+                  "sf": 0,
+                  "l": 0
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s2": {
+          "name": "Workshop – Primaten einschüchtern kann jeder",
+          "sprint": 2,
+          "descr": "Selbstbewusst auftreten, Körperfläche vergrößern, besonders einschüchternde Bewegungen, bewährte Schreitechniken, Schnelligkeitstraining",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 37,
+              "name": "Primaten Einschüchtern"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Geisttraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "m": 2,
+                  "rz": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Bewegungstraining",
+                "contain": null,
+                "dino_r": {
+                  "b": 2,
+                  "bg": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Primaten Einschüchtern",
+                "contain": 37,
+                "dino_r": {
+                  "m": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "2.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        },
+        "s3": {
+          "name": "Gorillasprache",
+          "sprint": 2,
+          "descr": "praxisorientierte Einführung in die Gorillasprache",
+          "contain": [
+            {
+              "id": 33,
+              "name": "Gorillasprache"
+            }
+          ],
+          "require": [],
+          "reward": [
+            {
+              "id": 33,
+              "name": "Gorillasprache"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Gorillasprache",
+                "contain": 33,
+                "dino_r": {
+                  "l": 0,
+                  "sf": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": [
+              {
+                "name": "Geist Checkup",
+                "contain": null,
+                "dino_r": {},
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "0.0",
+                "require": [
+                  33
+                ]
+              },
+              {
+                "name": "Geisttraining",
+                "contain": null,
+                "dino_r": {
+                  "sf": 1,
+                  "l": 1
+                },
+                "dino_a": {
+                  "sf": {
+                    "val": 6,
+                    "op": "ge"
+                  },
+                  "l": {
+                    "val": 7,
+                    "op": "ge"
+                  }
+                },
+                "time": "1.0",
+                "require": []
+              }
+            ]
+          }
+        },
+        "s4": {
+          "name": "Schnelligkeits- & Reflextraining",
+          "sprint": 2,
+          "descr": "Erfolgsworkshop: sich schneller bewegen, schneller denken, schneller handeln",
+          "contain": [],
+          "require": [],
+          "reward": [
+            {
+              "id": 38,
+              "name": "Schnelligkeits- & Reflextraining"
+            }
+          ],
+          "tasks": {
+            "tasks_always": [
+              {
+                "name": "Geistige Fitness",
+                "contain": null,
+                "dino_r": {
+                  "l": 1,
+                  "m": 1
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Reflextraining",
+                "contain": null,
+                "dino_r": {
+                  "rz": 2,
+                  "b": 2
+                },
+                "dino_a": {},
+                "time": "2.0",
+                "require": []
+              },
+              {
+                "name": "Geschicklichkeitstraining",
+                "contain": null,
+                "dino_r": {
+                  "bg": 2
+                },
+                "dino_a": {},
+                "time": "1.0",
+                "require": []
+              },
+              {
+                "name": "Schnelligkeits- & Reflextraining",
+                "contain": 38,
+                "dino_r": {
+                  "rz": 0,
+                  "b": 0
+                },
+                "dino_a": {},
+                "time": "1.5",
+                "require": []
+              }
+            ],
+            "tasks_choose": []
+          }
+        }
+      }
+    }
+  }
+}

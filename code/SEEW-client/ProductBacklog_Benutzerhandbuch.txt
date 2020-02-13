@@ -1,0 +1,13 @@
+Benutzerhandbuch Product Backlog
+
+Der Product Backlog erhält die Anforderungen an die zu erstellende Software (den Dino).
+Hier können die drei verschiedenen Epics priorisiert werden.
+
+Ablauf:
+
+- Eingabe einer Zahl zwischen 1 und 3 im Eingabefeld des Epics (1 = höchste Priorität)
+- Bestätigung der Eingabe mit Enter
+- Epic ordnet sich an entsprechender Stelle ein (höher priorisierte Epics stehen weiter links)
+- Priorität kann beliebig oft geändert werden
+
+

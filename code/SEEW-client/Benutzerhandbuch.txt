@@ -1,0 +1,18 @@
+Benutzerhandbuch: Prozess-Zwischensicht
+---------------------------------------
+Prozess-Zwischensicht wird nach jeder Phase und direkt nach dem Login
+angezeigt um Überblick über den Scrum Prozess zu bekommen, welche Phase 
+gerade abgeschlossen wurde und welche Phase die nächste ist. Außerdem
+wird die bereits vergangene Zeit angezeigt
+
+Die gerade abgeschlossene Phase ist durch eine schwarze Schattierung hervorgehoben.
+Die nächste Phase ist durch eine gelbe Schattierung hervorgehoben.
+
+Ablauf:
+1. Prozess-Zwischensicht wird aufgerufen
+2. Analysieren der gerade abgeschlossenen Phase, der nächsten Phase
+   und der abgelaufenen Zeit
+3. Erster Druck der Leertaste skaliert zur nächsten Phase
+4. Skalierung wurde abgeschlossen, nun füllt ein Screenshot 
+   aus der nächsten Phase das gesamte Fenster aus
+5. Zweiter Druck der Leertaste ruft die nächste Phase auf
